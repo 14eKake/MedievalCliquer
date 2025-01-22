@@ -16,6 +16,11 @@ export function initResources() {
         gold += 10;
         updateResources();
     });
+	    // Collecte de bois
+    document.getElementById('clickWood').addEventListener('click', () => {
+        wood += 5; // Ajoute 5 unités de bois par clic
+        updateResources();
+    });
 }
 
 // Mise à jour de l'affichage
