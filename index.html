@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Royaume Médiéval</h1>
+
+        <!-- Section de clic -->
+        <button id="clickGold">💰 Collecter de l'or</button>
+        <p>Or : <span id="goldCount">0</span></p>
+
+        <!-- Section des ressources -->
+        <h2>Ressources</h2>
+        <p>Bois : <span id="woodCount">0</span></p>
+        <p>Pierre : <span id="stoneCount">0</span></p>
+        <p>Nourriture : <span id="foodCount">0</span></p>
+
+        <!-- Section des bâtiments -->
+        <h2>Bâtiments</h2>
+        <button id="buildFarm">Construire une Ferme (50 or, 20 bois)</button>
+        <button id="buildBarracks">Construire une Caserne (100 or, 50 pierre)</button>
+        <p>Fermes : <span id="farmCount">0</span></p>
+        <p>Casernes : <span id="barracksCount">0</span></p>
+
+        <!-- Section des unités -->
+        <h2>Armée</h2>
+        <button id="recruitSoldier">Recruter un Soldat (10 nourriture)</button>
+        <p>Soldats : <span id="soldierCount">0</span></p>
+
+        <!-- Section des ennemis -->
+        <h2>Défense</h2>
+        <p>Prochaine attaque dans : <span id="enemyTimer">10</span> secondes</p>
+        <p>Ennemis restants : <span id="enemyCount">0</span></p>
+    </div>
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>
